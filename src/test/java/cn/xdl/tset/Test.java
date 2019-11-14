@@ -13,6 +13,6 @@ public class Test {
 		KnowledgeDao bean = app.getBean("kd",KnowledgeDao.class);
 		System.out.println(bean);
 		System.out.println(bean.findAll());
-	}
+	} 
 
 }
