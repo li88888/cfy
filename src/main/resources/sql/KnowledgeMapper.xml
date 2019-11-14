@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <!-- namespace指定和哪个Mapper映射器接口对应 -->
+<mapper namespace="cn.xdl.dao.KnowledgeDao">
+	<!-- 定义SQL语句 -->	
+    <select id="findAll"   resultType="cn.xdl.bean.Knowledge">
+         select * from  et_knowledge_point order by point_id
+    </select>
+
+  
+</mapper>
