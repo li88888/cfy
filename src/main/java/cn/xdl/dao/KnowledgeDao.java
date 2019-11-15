@@ -8,6 +8,6 @@ import cn.xdl.bean.Knowledge;
 @Service("kd")
 public interface KnowledgeDao {
 	
-	List<Knowledge> findAll();
+	List<Knowledge> findAll(int y);
 
 }

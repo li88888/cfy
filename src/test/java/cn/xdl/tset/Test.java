@@ -12,7 +12,10 @@ public class Test {
 		ApplicationContext app=new ClassPathXmlApplicationContext("applicationContext.xml");
 		KnowledgeDao bean = app.getBean("kd",KnowledgeDao.class);
 		System.out.println(bean);
-		System.out.println(bean.findAll());
+	
+		System.out.println(bean.findAll(2*1));
+		
+		
 	} 
 
 }

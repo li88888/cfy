@@ -4,8 +4,9 @@
  <!-- namespace指定和哪个Mapper映射器接口对应 -->
 <mapper namespace="cn.xdl.dao.KnowledgeDao">
 	<!-- 定义SQL语句 -->	
-    <select id="findAll"   resultType="cn.xdl.bean.Knowledge">
-         select * from  et_knowledge_point order by point_id
+    <select id="findAll" parameterType="int"  
+    resultType="cn.xdl.bean.Knowledge">
+         select * from  et_knowledge_point limit #{y},10
     </select>
 
   
